@@ -1,0 +1,299 @@
+% references.bib
+% Literature survey: verifying LLM-generated security patches
+% Compiled 2026-11-23. Metadata checked against Crossref, arXiv and OpenAlex.
+% Notes and PDFs for each entry live in notes/<key>.md and papers/.
+
+% ---------------------------------------------------------------------------
+% 1. Automated program repair: foundations and evaluation
+% ---------------------------------------------------------------------------
+
+@article{leGoues2012,
+  author  = {Le Goues, Claire and Nguyen, ThanhVu and Forrest, Stephanie and Weimer, Westley},
+  title   = {{GenProg: A Generic Method for Automatic Software Repair}},
+  journal = {IEEE Transactions on Software Engineering},
+  year    = {2012},
+  volume  = {38},
+  number  = {1},
+  pages   = {54--72},
+  doi     = {10.1109/TSE.2011.104}
+}
+
+@article{gazzola2019,
+  author  = {Gazzola, Luca and Micucci, Daniela and Mariani, Leonardo},
+  title   = {{Automatic Software Repair: A Survey}},
+  journal = {IEEE Transactions on Software Engineering},
+  year    = {2019},
+  volume  = {45},
+  number  = {1},
+  pages   = {34--67},
+  doi     = {10.1109/TSE.2017.2755013}
+}
+
+@article{monperrus2018,
+  author  = {Monperrus, Martin},
+  title   = {{Automatic Software Repair: A Bibliography}},
+  journal = {ACM Computing Surveys},
+  year    = {2018},
+  volume  = {51},
+  number  = {1},
+  pages   = {1--24},
+  doi     = {10.1145/3105906},
+  note    = {Preprint: arXiv:1807.00515}
+}
+
+@inproceedings{qi2015,
+  author    = {Qi, Zichao and Long, Fan and Achour, Sara and Rinard, Martin},
+  title     = {{An Analysis of Patch Plausibility and Correctness for Generate-and-Validate Patch Generation Systems}},
+  booktitle = {Proceedings of the 2015 International Symposium on Software Testing and Analysis (ISSTA)},
+  year      = {2015},
+  pages     = {24--36},
+  publisher = {ACM},
+  doi       = {10.1145/2771783.2771791},
+  note      = {Author version: MIT-CSAIL-TR-2015-020}
+}
+
+@inproceedings{smith2015,
+  author    = {Smith, Edward K. and Barr, Earl T. and Le Goues, Claire and Brun, Yuriy},
+  title     = {{Is the Cure Worse Than the Disease? Overfitting in Automated Program Repair}},
+  booktitle = {Proceedings of the 2015 10th Joint Meeting on Foundations of Software Engineering (ESEC/FSE)},
+  year      = {2015},
+  pages     = {532--543},
+  publisher = {ACM},
+  doi       = {10.1145/2786805.2786825}
+}
+
+@inproceedings{xiong2018,
+  author    = {Xiong, Yingfei and Liu, Xinyuan and Zeng, Muhan and Zhang, Lu and Huang, Gang},
+  title     = {{Identifying Patch Correctness in Test-Based Program Repair}},
+  booktitle = {Proceedings of the 40th International Conference on Software Engineering (ICSE)},
+  year      = {2018},
+  pages     = {789--799},
+  publisher = {ACM},
+  doi       = {10.1145/3180155.3180182},
+  note      = {Preprint: arXiv:1706.09120}
+}
+
+@inproceedings{just2014,
+  author    = {Just, Ren{\'e} and Jalali, Darioush and Inozemtseva, Laura and Ernst, Michael D. and Holmes, Reid and Fraser, Gordon},
+  title     = {{Are Mutants a Valid Substitute for Real Faults in Software Testing?}},
+  booktitle = {Proceedings of the 22nd ACM SIGSOFT International Symposium on Foundations of Software Engineering (FSE)},
+  year      = {2014},
+  pages     = {654--665},
+  publisher = {ACM},
+  doi       = {10.1145/2635868.2635929}
+}
+
+@article{barr2015,
+  author  = {Barr, Earl T. and Harman, Mark and McMinn, Phil and Shahbaz, Muzammil and Yoo, Shin},
+  title   = {{The Oracle Problem in Software Testing: A Survey}},
+  journal = {IEEE Transactions on Software Engineering},
+  year    = {2015},
+  volume  = {41},
+  number  = {5},
+  pages   = {507--525},
+  doi     = {10.1109/TSE.2014.2372785}
+}
+
+@article{liu2021,
+  author  = {Liu, Kui and Li, Li and Koyuncu, Anil and Kim, Dongsun and Liu, Zhe and Klein, Jacques and Bissyand{\'e}, Tegawend{\'e} F.},
+  title   = {{A Critical Review on the Evaluation of Automated Program Repair Systems}},
+  journal = {Journal of Systems and Software},
+  year    = {2021},
+  volume  = {171},
+  pages   = {110817},
+  doi     = {10.1016/j.jss.2020.110817}
+}
+
+% ---------------------------------------------------------------------------
+% 2. LLM-based repair of vulnerabilities and bugs
+% ---------------------------------------------------------------------------
+
+@inproceedings{pearce2023,
+  author    = {Pearce, Hammond and Tan, Benjamin and Ahmad, Baleegh and Karri, Ramesh and Dolan-Gavitt, Brendan},
+  title     = {{Examining Zero-Shot Vulnerability Repair with Large Language Models}},
+  booktitle = {2023 IEEE Symposium on Security and Privacy (SP)},
+  year      = {2023},
+  pages     = {2339--2356},
+  publisher = {IEEE},
+  doi       = {10.1109/SP46215.2023.10179324},
+  note      = {Preprint: arXiv:2112.02125}
+}
+
+@inproceedings{pearce2022,
+  author    = {Pearce, Hammond and Ahmad, Baleegh and Tan, Benjamin and Dolan-Gavitt, Brendan and Karri, Ramesh},
+  title     = {{Asleep at the Keyboard? Assessing the Security of GitHub Copilot's Code Contributions}},
+  booktitle = {2022 IEEE Symposium on Security and Privacy (SP)},
+  year      = {2022},
+  pages     = {754--768},
+  publisher = {IEEE},
+  doi       = {10.1109/SP46214.2022.9833571},
+  note      = {Preprint: arXiv:2108.09293}
+}
+
+@misc{chen2019,
+  author       = {Chen, Zimin and Kommrusch, Steve and Tufano, Michele and Pouchet, Louis-No{\"e}l and Poshyvanyk, Denys and Monperrus, Martin},
+  title        = {{SequenceR: Sequence-to-Sequence Learning for End-to-End Program Repair}},
+  year         = {2019},
+  eprint       = {1901.01808},
+  archivePrefix = {arXiv},
+  doi          = {10.48550/arXiv.1901.01808},
+  url          = {https://arxiv.org/abs/1901.01808},
+  note         = {Published in IEEE Transactions on Software Engineering, 2021}
+}
+
+@article{zhang2024vul,
+  author  = {Zhang, Quanjun and Fang, Chunrong and Yu, Bowen and Sun, Weisong and Zhang, Tongke and Chen, Zhenyu},
+  title   = {{Pre-Trained Model-Based Automated Software Vulnerability Repair: How Far Are We?}},
+  journal = {IEEE Transactions on Dependable and Secure Computing},
+  year    = {2024},
+  volume  = {21},
+  number  = {4},
+  pages   = {2507--2525},
+  doi     = {10.1109/TDSC.2023.3308897},
+  note    = {Preprint: arXiv:2308.12533}
+}
+
+@inproceedings{bouzenia2025,
+  author    = {Bouzenia, Islem and Devanbu, Premkumar and Pradel, Michael},
+  title     = {{RepairAgent: An Autonomous, LLM-Based Agent for Program Repair}},
+  booktitle = {2025 IEEE/ACM 47th International Conference on Software Engineering (ICSE)},
+  year      = {2025},
+  pages     = {2188--2200},
+  publisher = {IEEE},
+  doi       = {10.1109/ICSE55347.2025.00157},
+  note      = {Preprint: arXiv:2403.17134}
+}
+
+@inproceedings{le2024,
+  author    = {Le, Tan Khang and Alimadadi, Saba and Ko, Steven Y.},
+  title     = {{A Study of Vulnerability Repair in JavaScript Programs with Large Language Models}},
+  booktitle = {Companion Proceedings of the ACM Web Conference 2024 (WWW '24)},
+  year      = {2024},
+  pages     = {666--669},
+  publisher = {ACM},
+  doi       = {10.1145/3589335.3651463},
+  note      = {Preprint: arXiv:2403.13193}
+}
+
+@misc{hu2025,
+  author        = {Hu, Yiwei and Li, Zhen and Shu, Kedie and Guan, Shenghua and Zou, Deqing and Xu, Shouhuai and Yuan, Bin and Jin, Hai},
+  title         = {{SoK: Automated Vulnerability Repair: Methods, Tools, and Assessments}},
+  year          = {2025},
+  eprint        = {2506.11697},
+  archivePrefix = {arXiv},
+  doi           = {10.48550/arXiv.2506.11697},
+  url           = {https://arxiv.org/abs/2506.11697},
+  note          = {Accepted at the 34th USENIX Security Symposium (USENIX Security 2025)}
+}
+
+@misc{zhang2024apr,
+  author        = {Zhang, Quanjun and Fang, Chunrong and Xie, Yang and Ma, Yuxiang and Sun, Weisong and Yang, Yun and Chen, Zhenyu},
+  title         = {{A Systematic Literature Review on Large Language Models for Automated Program Repair}},
+  year          = {2024},
+  eprint        = {2405.01466},
+  archivePrefix = {arXiv},
+  doi           = {10.48550/arXiv.2405.01466},
+  url           = {https://arxiv.org/abs/2405.01466},
+  note          = {Accepted to ACM Transactions on Software Engineering and Methodology (TOSEM)}
+}
+
+% ---------------------------------------------------------------------------
+% 3. LLM security agents, detection and security benchmarks
+% ---------------------------------------------------------------------------
+
+@misc{fang2024,
+  author        = {Fang, Richard and Bindu, Rohan and Gupta, Akul and Zhan, Qiusi and Kang, Daniel},
+  title         = {{LLM Agents Can Autonomously Hack Websites}},
+  year          = {2024},
+  eprint        = {2402.06664},
+  archivePrefix = {arXiv},
+  doi           = {10.48550/arXiv.2402.06664},
+  url           = {https://arxiv.org/abs/2402.06664}
+}
+
+@misc{deng2023,
+  author        = {Deng, Gelei and Liu, Yi and Mayoral-Vilches, V{\'i}ctor and Liu, Peng and Li, Yuekang and Xu, Yuan and Zhang, Tianwei and Liu, Yang and Pinzger, Martin and Rass, Stefan},
+  title         = {{PentestGPT: An LLM-Empowered Automatic Penetration Testing Tool}},
+  year          = {2023},
+  eprint        = {2308.06782},
+  archivePrefix = {arXiv},
+  doi           = {10.48550/arXiv.2308.06782},
+  url           = {https://arxiv.org/abs/2308.06782},
+  note          = {The PDF in this repository is the later version titled ``PentestGPT: Evaluating and Harnessing Large Language Models for Automated Penetration Testing''}
+}
+
+@inproceedings{he2023,
+  author    = {He, Jingxuan and Vechev, Martin},
+  title     = {{Large Language Models for Code: Security Hardening and Adversarial Testing}},
+  booktitle = {Proceedings of the 2023 ACM SIGSAC Conference on Computer and Communications Security (CCS)},
+  year      = {2023},
+  pages     = {1865--1879},
+  publisher = {ACM},
+  doi       = {10.1145/3576915.3623175},
+  note      = {Preprint: arXiv:2302.05319}
+}
+
+@inproceedings{li2025,
+  author    = {Li, Ziyang and Dutta, Saikat and Naik, Mayur},
+  title     = {{IRIS: LLM-Assisted Static Analysis for Detecting Security Vulnerabilities}},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  url       = {https://proceedings.iclr.cc/paper_files/paper/2025/file/582d4e27fa24168f3af1f4582655034b-Paper-Conference.pdf},
+  note      = {Preprint: arXiv:2405.17238}
+}
+
+@misc{bhatt2023,
+  author        = {Bhatt, Manish and Chennabasappa, Sahana and Nikolaidis, Cyrus and Wan, Shengye and Evtimov, Ivan and Gabi, Dominik and others},
+  title         = {{Purple Llama CyberSecEval: A Secure Coding Benchmark for Language Models}},
+  year          = {2023},
+  eprint        = {2312.04724},
+  archivePrefix = {arXiv},
+  doi           = {10.48550/arXiv.2312.04724},
+  url           = {https://arxiv.org/abs/2312.04724}
+}
+
+% ---------------------------------------------------------------------------
+% 4. Evaluation methodology: benchmarks, contamination, human judgement
+% ---------------------------------------------------------------------------
+
+@inproceedings{jimenez2024,
+  author    = {Jimenez, Carlos E. and Yang, John and Wettig, Alexander and Yao, Shunyu and Pei, Kexin and Press, Ofir and Narasimhan, Karthik},
+  title     = {{SWE-bench: Can Language Models Resolve Real-World GitHub Issues?}},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2024},
+  url       = {https://proceedings.iclr.cc/paper_files/paper/2024/file/edac78c3e300629acfe6cbe9ca88fb84-Paper-Conference.pdf},
+  note      = {Preprint: arXiv:2310.06770}
+}
+
+@inproceedings{jain2025,
+  author    = {Jain, Naman and Han, King and Gu, Alex and Li, Wen-Ding and Yan, Fanjia and Zhang, Tianjun and Wang, Sida and Solar-Lezama, Armando and Sen, Koushik and Stoica, Ion},
+  title     = {{LiveCodeBench: Holistic and Contamination Free Evaluation of Large Language Models for Code}},
+  booktitle = {International Conference on Learning Representations (ICLR)},
+  year      = {2025},
+  url       = {https://proceedings.iclr.cc/paper_files/paper/2025/file/94074dd5a072d28ff75a76dabed43767-Paper-Conference.pdf},
+  note      = {Preprint: arXiv:2403.07974}
+}
+
+@inproceedings{zheng2023,
+  author    = {Zheng, Lianmin and Chiang, Wei-Lin and Sheng, Ying and Zhuang, Siyuan and Wu, Zhanghao and Zhuang, Yonghao and Lin, Zi and Li, Zhuohan and Li, Dacheng and Xing, Eric P. and Zhang, Hao and Gonzalez, Joseph E. and Stoica, Ion},
+  title     = {{Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena}},
+  booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
+  year      = {2023},
+  url       = {https://arxiv.org/abs/2306.05685},
+  note      = {Preprint: arXiv:2306.05685}
+}
+
+% ---------------------------------------------------------------------------
+% 5. Benchmarks and standards used as background/motivation
+% ---------------------------------------------------------------------------
+
+@inproceedings{bui2022,
+  author    = {Bui, Quang-Cuong and Scandariato, Riccardo and D{\'i}az Ferreyra, Nicol{\'a}s E.},
+  title     = {{Vul4J: A Dataset of Reproducible Java Vulnerabilities Geared Towards the Study of Program Repair Techniques}},
+  booktitle = {Proceedings of the 19th International Conference on Mining Software Repositories (MSR)},
+  year      = {2022},
+  pages     = {464--468},
+  publisher = {ACM},
+  doi       = {10.1145/3524842.3528482},
+  note      = {Artifact: \url{https://zenodo.org/record/6383527}}
+}
